@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -12,30 +12,31 @@
 <body class="dark:bg-night-900">
     <div class="lg:fixed flex md:h-full lg:w-[475px] border-r dark:border-night-800 border-gray-200 bg-cloud">
         <div
-            class="hidden md:block watermark mx-auto px-5 py-10 justify-center relative flex bg-white dark:bg-night-700 dark:text-white border-r dark:border-night-400 border-gray-200 transition-all">
+            class="watermark mx-auto md:px-5 py-10 justify-center w-auto md:relative sm:static bg-white dark:bg-night-700 dark:text-white md:border-r dark:border-night-400 border-gray-200 ">
             <div class="vertical-rl flex text-sm cursor-default select-none">
-                <h1 class="text-gray-500 dark:text-gray-300 transition-all">Hosted by <i
-                        class="fa-solid fa-heart my-4 dark:text-night-400 transition-all"></i> GitHub
+                <h1 class="text-gray-500 dark:text-gray-300 hidden md:block">Hosted by <i
+                        class="fa-solid fa-heart my-4 dark:text-night-400 hidden md:block"></i> GitHub
                 </h1>
-                <span class="py-6">/</span>
-                <h1 class="font-bold">Personal Identity</h1>
+                <span class="py-6 hidden md:block">/</span>
+                <h1 class="font-bold hidden md:block">Personal Identity</h1>
 
-                <div
-                    class="horizontal-rl absolute bottom-7 left-0 right-0 text-center mx-auto bg-red-400 dark:border-white text-white dark:bg-white dark:text-red-400 rounded-full h-[35px] w-[35px] flex align-middle items-center justify-center transition-all">
-                    <button class="toggleDark"><i class="fa-solid fa-moon text-2xl"></i></button>
-                </div>
+                <button onclick="toggleDark()"
+                    class="horizontal-rl md:absolute fixed z-50 animate-pulse md:animate-none bottom-6 md:left-0 md:right-0 right-[20px] text-center mx-auto bg-red-400 dark:border-white text-white dark:bg-white dark:text-red-400 rounded-full md:h-[35px] md:w-[35px] h-[50px] w-[50px] flex align-middle items-center justify-center ">
+                    <i class="fa-solid fa-moon text-2xl"></i>
+            </button>
             </div>
         </div>
 
         <div class="profile overflow-y-auto">
-            <div class="md:min-h-full bg-cloud dark:bg-night-900 pt-11 transition-all">
+            <div class="md:min-h-full bg-cloud dark:bg-night-900 pt-11 ">
                 <div class="incontent grid relative">
-                    <div
+                    <div class="box grid">
+                        <div
                         class="picture mx-auto border-2 border-gray-300 dark:bg-night-800 dark:border-gray-700 rounded-3xl
-                    shadow-2xl shadow-gray-200 dark:shadow-[#131d34] overflow-hidden top-0 hover:top-[-5px] transition-all">
+                    shadow-2xl shadow-gray-200 dark:shadow-[#131d34] overflow-hidden relative top-0 hover:top-[-5px] transition-all">
                         <a target="_blank" href="https://github.com/barisalby">
                             <svg id="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                width="250" height="250" class="p-5" viewBox="0, 0, 400,400" version="1.1">
+                                width="250" height="250" class="p-5 relative" viewBox="0, 0, 400,400" version="1.1">
                                 <g id="svgg">
                                     <path id="path0"
                                         d="M78.000 79.000 L 78.000 158.000 39.000 158.000 L 0.000 158.000 0.000 240.004 L 0.000 322.007 40.992 321.996 L 81.985 321.985 81.996 282.122 C 82.002 260.198,82.064 242.203,82.133 242.133 C 82.203 242.064,100.208 242.002,122.145 241.996 C 153.492 241.987,162.018 241.880,161.968 241.492 C 161.934 241.222,161.927 205.225,161.953 161.500 L 162.000 82.000 200.000 82.000 L 238.000 82.000 238.052 160.700 C 238.081 203.985,238.104 239.982,238.103 240.693 L 238.102 241.985 277.921 241.996 C 299.822 242.002,317.795 242.062,317.862 242.128 C 317.928 242.195,317.995 260.190,318.009 282.117 L 318.036 321.985 359.018 321.996 L 400.000 322.007 400.000 240.004 L 400.000 158.000 361.000 158.000 L 322.000 158.000 322.000 79.000 L 322.000 0.000 200.000 0.000 L 78.000 0.000 78.000 79.000 M158.009 359.009 L 157.983 400.000 199.995 400.000 L 242.007 400.000 241.996 359.009 L 241.985 318.018 200.010 318.018 L 158.035 318.018 158.009 359.009 "
@@ -46,16 +47,45 @@
                                     <path id="path4" d="" stroke="none" fill-rule="evenodd"></path>
                                 </g>
                             </svg></a>
+                    </div>
                         <div
-                            class="scrollDown absolute mt-[-15px] animate-bounce left-0 right-0 text-center mx-auto bg-night-400 rounded-full h-[30px] w-[30px] flex align-middle items-center justify-center">
-                            <i class="fa-solid fa-arrow-down text-white text-2xl"></i>
-                        </div>
+                        class="scrollDown lg:hidden absolute animate-bounce left-0 right-0 top-[250px] text-center mx-auto bg-night-400 rounded-full h-[30px] w-[30px] flex align-middle items-center justify-center">
+                        <i class="fa-solid fa-arrow-down text-white text-2xl"></i>
+                    </div>
                     </div>
 
+
                     <div class="title px-10">
-                        <h1 class='font-semibold text-xl text-center mt-12 dark:text-night-400 transition-all'>Barış
+                        <h1 class='font-semibold text-xl text-center mt-12 dark:text-night-400 '>Barış
                             Albayrak</h1>
-                        <p class="text-center mt-3 pb-24 dark:text-gray-300 transition-all">Lorem ipsum, dolor sit amet
+                        <p class="text-center mt-3 pb-24 dark:text-gray-300 ">Lorem ipsum, dolor sit amet
+                            consectetur
+                            adipisicing elit.
+                            Minus a, quam itaque tempora assumenda saepe. Magni delectus veritatis ut natus voluptatem
+                            necessitatibus nemo possimus iste eum at! Libero, quae. Quod. Nulla architecto neque,
+                            necessitatibus molestias eos, eum vitae quae aliquam voluptatum at aliquid cupiditate
+                            assumenda sapiente! Atque cupiditate aspernatur laudantium, sequi repudiandae autem modi, at
+                            dolores voluptates quidem porro optio?
+                            <br/>
+                            <br/>
+                            Lorem ipsum, dolor sit amet
+                            consectetur
+                            adipisicing elit.
+                            Minus a, quam itaque tempora assumenda saepe. Magni delectus veritatis ut natus voluptatem
+                            necessitatibus nemo possimus iste eum at! Libero, quae. Quod. Nulla architecto neque,
+                            necessitatibus molestias eos, eum vitae quae aliquam voluptatum at aliquid cupiditate
+                            assumenda sapiente! Atque cupiditate aspernatur laudantium, sequi repudiandae autem modi, at
+                            dolores voluptates quidem porro optio?
+
+                            Lorem ipsum, dolor sit amet
+                            consectetur
+                            adipisicing elit.
+                            Minus a, quam itaque tempora assumenda saepe. Magni delectus veritatis ut natus voluptatem
+                            necessitatibus nemo possimus iste eum at! Libero, quae. Quod. Nulla architecto neque,
+                            necessitatibus molestias eos, eum vitae quae aliquam voluptatum at aliquid cupiditate
+                            assumenda sapiente! Atque cupiditate aspernatur laudantium, sequi repudiandae autem modi, at
+                            dolores voluptates quidem porro optio?
+                            Lorem ipsum, dolor sit amet
                             consectetur
                             adipisicing elit.
                             Minus a, quam itaque tempora assumenda saepe. Magni delectus veritatis ut natus voluptatem
@@ -67,30 +97,30 @@
                     </div>
 
                     <div
-                        class="bg-cloud dark:bg-night-500 lg:fixed lg:w-[422px] w-full bottom-0 justify-end flex flex-col items-center transition-all">
+                        class="bg-cloud dark:bg-night-500 lg:fixed lg:w-[422px] w-full bottom-0 justify-end flex flex-col items-center ">
 
-                        <hr class="w-full dark:border-night-400 transition-all">
+                        <hr class="w-full dark:border-night-400 ">
 
                         <div class="links flex my-8 px-5">
                             <a href="#"
-                                class="text-2xl dark:hover:text-night-400 transition-all text-gray-400 hover:text-gray-800 flex align-middle items-center mr-7">
-                                <i class="fa-brands fa-linkedin-in dark:text-night-400 transition-all"></i>
+                                class="text-2xl dark:hover:text-night-400  text-gray-400 hover:text-gray-800 flex align-middle items-center mr-7">
+                                <i class="fa-brands fa-linkedin-in dark:text-night-400 "></i>
                                 <span
                                     class="text-base ml-3 font-medium dark:text-white text-gray-600 dark:hover:text-night-400 transition-all">LinkedIn</span>
                             </a>
 
                             <a href="#"
-                                class="text-2xl text-gray-400 dark:hover:text-night-400 transition-all hover:text-gray-800 flex align-middle items-center mr-7">
-                                <i class="fa-brands fa-github dark:text-night-400 transition-all"></i>
+                                class="text-2xl text-gray-400 dark:hover:text-night-400  hover:text-gray-800 flex align-middle items-center mr-7">
+                                <i class="fa-brands fa-github dark:text-night-400 "></i>
                                 <span
-                                    class="text-base ml-3 font-medium text-gray-600 dark:hover:text-night-400 transition-all dark:text-white">LinkedIn</span>
+                                    class="text-base ml-3 font-medium text-gray-600 dark:hover:text-night-400  dark:text-white transition-all">GitHub</span>
                             </a>
 
                             <a href="#"
-                                class="text-2xl dark:hover:text-night-400 transition-all text-gray-400 hover:text-gray-800 flex align-middle items-center">
-                                <i class="fa-brands fa-stack-overflow dark:text-night-400 transition-all"></i>
+                                class="text-2xl dark:hover:text-night-400  text-gray-400 hover:text-gray-800 flex align-middle items-center">
+                                <i class="fa-brands fa-stack-overflow dark:text-night-400"></i>
                                 <span
-                                    class="text-base ml-3 font-medium text-gray-600 dark:text-white dark:hover:text-night-400 transition-all">LinkedIn</span>
+                                    class="text-base ml-3 font-medium text-gray-600 dark:text-white dark:hover:text-night-400 transition-all ">Stack Overflow</span>
                             </a>
                         </div>
 
@@ -100,11 +130,11 @@
         </div>
     </div>
 
-    <div class="lg:flex flex-row lg:ml-128 lg:px-21 md:px-14">
+    <div class="lg:ml-128 lg:px-21 md:px-14">
         <div class="content">
-            <div class="grid grid-cols-1 p-14">
+            <div class="grid grid-cols-1 md:p-14 p-8">
                 <h1
-                    class="text-gray-900 dark:text-white font-semibold text-2xl underline flex align-middle items-center justify-between transition-all">
+                    class="text-gray-900 dark:text-white font-semibold text-2xl underline flex align-middle items-center justify-between ">
                     My Useful
                     Repositories
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
@@ -120,7 +150,7 @@
                             <a target="_blank" href="https://github.com/barisalby">
                                 <svg id="svg" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="65"
-                                    class="p-4 bg-cloud dark:bg-night-700 border-4 dark:border-gray-600 rounded-full overflow-visible transition-all"
+                                    class="p-4 bg-cloud dark:bg-night-700 border-4 dark:border-gray-600 rounded-full overflow-visible "
                                     viewBox="0, 0, 400,400" version="1.1">
                                     <g id="svgg">
                                         <path id="path0"
@@ -134,11 +164,11 @@
                                 </svg></a>
                         </div>
                         <div
-                            class="details rounded-bl-xl rounded-br-xl hover:shadow-xl hover:shadow-indigo-50 dark:hover:shadow-[#131d34] transition-all">
+                            class="details rounded-bl-xl rounded-br-xl hover:shadow-xl hover:shadow-indigo-50 dark:hover:shadow-[#131d34] ">
                             <div
                                 class="m-head col-span-6 -z-10 flex pt-16 md:pt-4 justify-between align-middle items-center bg-gray-200 dark:bg-night-700 px-10 py-3 rounded-tl-xl rounded-tr-xl">
                                 <div class="flex flex-col md:flex-row lg:flex-col xl:flex-row">
-                                    <h2 class="text-md text-gray-700 dark:text-white transition-all">Published: <span
+                                    <h2 class="text-md text-gray-700 dark:text-white ">Published: <span
                                             class="font-semibold">25.11.2022</span></h2>
                                 </div>
 
@@ -147,7 +177,7 @@
                                         role="button">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                             stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-                                            <path class="text-black dark:text-white transition-all"
+                                            <path class="text-black dark:text-white "
                                                 stroke-linecap="round" stroke-linejoin="round"
                                                 d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
                                         </svg>
@@ -155,27 +185,25 @@
 
                                     <ul
                                         class="dropdown-menu absolute top-10 right-0 shadow-xl rounded-lg bg-white p-1 text-center hidden group-[.active]:block">
-                                        <li
-                                            class="hover:bg-red-200 transition-all rounded-md m-2 bg-gray-100 py-3 px-3">
-                                            <a class="dropdown-item" target="_blank" href="#">View on
+                                        <li>
+                                            <a class="dropdown-item block hover:bg-red-200 rounded-md m-2 bg-gray-100 py-3 px-3" target="_blank" href="#">View on
                                                 GitHub</a>
                                         </li>
-                                        <li
-                                            class="hover:bg-red-200 transition-all rounded-md m-2 bg-gray-100 py-3 px-3">
-                                            <a class="dropdown-item" target="_blank" href="#">Live Demo</a>
+                                        <li>
+                                            <a class="dropdown-item block hover:bg-red-200 rounded-md m-2 bg-gray-100 py-3 px-3" target="_blank" href="#">Live Demo</a>
                                         </li>
                                     </ul>
                                 </div>
 
                             </div>
                             <div
-                                class="m-body flex flex-col align-middle items-start bg-white dark:bg-night-800 border-2 dark:border-night-700 px-10 py-3 rounded-bl-xl rounded-br-xl transition-all">
+                                class="m-body flex flex-col align-middle items-start bg-white dark:bg-night-800 border-2 dark:border-night-700 px-10 py-3 rounded-bl-xl rounded-br-xl ">
                                 <h2
-                                    class="text-2xl mr-2 mt-5 mb-2 font-semibold text-gray-800 dark:text-night-400 transition-all">
+                                    class="text-2xl mr-2 mt-5 mb-2 font-semibold text-gray-800 dark:text-night-400 ">
                                     {{Repository Name}}</h2>
                                 <hr
                                     class="bg-slate dark:bg-transparent dark:border-gray-600 h-0.5 my-3 mb-5 rounded-full w-full">
-                                <p class="text-gray-700 dark:text-gray-300 pb-8 transition-all">Lorem ipsum, dolor sit
+                                <p class="text-gray-700 dark:text-gray-300 pb-8 ">Lorem ipsum, dolor sit
                                     amet
                                     consectetur adipisicing elit.
                                     Minus a,
@@ -223,10 +251,117 @@
                     </div>
                 </div>
 
+                <div class="repo md:mt-10">
+                    <div class="repositories md:flex gap-5">
+                        <div class="m-box h-[50px] justify-center lg:justify-start top-[30px] md:top-0 relative flex">
+                            <a target="_blank" href="https://github.com/barisalby">
+                                <svg id="svg" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="65"
+                                    class="p-4 bg-cloud dark:bg-night-700 border-4 dark:border-gray-600 rounded-full overflow-visible "
+                                    viewBox="0, 0, 400,400" version="1.1">
+                                    <g id="svgg">
+                                        <path id="path0"
+                                            d="M78.000 79.000 L 78.000 158.000 39.000 158.000 L 0.000 158.000 0.000 240.004 L 0.000 322.007 40.992 321.996 L 81.985 321.985 81.996 282.122 C 82.002 260.198,82.064 242.203,82.133 242.133 C 82.203 242.064,100.208 242.002,122.145 241.996 C 153.492 241.987,162.018 241.880,161.968 241.492 C 161.934 241.222,161.927 205.225,161.953 161.500 L 162.000 82.000 200.000 82.000 L 238.000 82.000 238.052 160.700 C 238.081 203.985,238.104 239.982,238.103 240.693 L 238.102 241.985 277.921 241.996 C 299.822 242.002,317.795 242.062,317.862 242.128 C 317.928 242.195,317.995 260.190,318.009 282.117 L 318.036 321.985 359.018 321.996 L 400.000 322.007 400.000 240.004 L 400.000 158.000 361.000 158.000 L 322.000 158.000 322.000 79.000 L 322.000 0.000 200.000 0.000 L 78.000 0.000 78.000 79.000 M158.009 359.009 L 157.983 400.000 199.995 400.000 L 242.007 400.000 241.996 359.009 L 241.985 318.018 200.010 318.018 L 158.035 318.018 158.009 359.009 "
+                                            stroke="none" class="fill-red-400" fill-rule="evenodd"></path>
+                                        <path id="path1" d="" stroke="none" fill-rule="evenodd"></path>
+                                        <path id="path2" d="" stroke="none" fill-rule="evenodd"></path>
+                                        <path id="path3" d="" stroke="none" fill-rule="evenodd"></path>
+                                        <path id="path4" d="" stroke="none" fill-rule="evenodd"></path>
+                                    </g>
+                                </svg></a>
+                        </div>
+                        <div
+                            class="details rounded-bl-xl rounded-br-xl hover:shadow-xl hover:shadow-indigo-50 dark:hover:shadow-[#131d34] ">
+                            <div
+                                class="m-head col-span-6 -z-10 flex pt-16 md:pt-4 justify-between align-middle items-center bg-gray-200 dark:bg-night-700 px-10 py-3 rounded-tl-xl rounded-tr-xl">
+                                <div class="flex flex-col md:flex-row lg:flex-col xl:flex-row">
+                                    <h2 class="text-md text-gray-700 dark:text-white ">Published: <span
+                                            class="font-semibold">25.11.2022</span></h2>
+                                </div>
 
+                                <div class="dropdown flex basis-1/2 relative group">
+                                    <a class="btn btn-secondary dropdown-toggle ml-24 w-full flex justify-end"
+                                        role="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                                            <path class="text-black dark:text-white "
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                        </svg>
+                                    </a>
+
+                                    <ul
+                                        class="dropdown-menu absolute top-10 right-0 shadow-xl rounded-lg bg-white p-1 text-center hidden group-[.active]:block">
+                                        <li>
+                                            <a class="dropdown-item block hover:bg-red-200 rounded-md m-2 bg-gray-100 py-3 px-3" target="_blank" href="#">View on
+                                                GitHub</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item block hover:bg-red-200 rounded-md m-2 bg-gray-100 py-3 px-3" target="_blank" href="#">Live Demo</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div
+                                class="m-body flex flex-col align-middle items-start bg-white dark:bg-night-800 border-2 dark:border-night-700 px-10 py-3 rounded-bl-xl rounded-br-xl ">
+                                <h2
+                                    class="text-2xl mr-2 mt-5 mb-2 font-semibold text-gray-800 dark:text-night-400 ">
+                                    {{Repository Name}}</h2>
+                                <hr
+                                    class="bg-slate dark:bg-transparent dark:border-gray-600 h-0.5 my-3 mb-5 rounded-full w-full">
+                                <p class="text-gray-700 dark:text-gray-300 pb-8 ">Lorem ipsum, dolor sit
+                                    amet
+                                    consectetur adipisicing elit.
+                                    Minus a,
+                                    quam itaque tempora
+                                    assumenda saepe. Magni delectus veritatis ut natus voluptatem necessitatibus nemo
+                                    possimus iste eum at! Libero, quae. Quod.
+                                    Nulla architecto neque, necessitatibus molestias eos, eum vitae quae aliquam
+                                    voluptatum
+                                    at aliquid cupiditate assumenda sapiente! Atque cupiditate aspernatur laudantium,
+                                    sequi
+                                    repudiandae autem modi, at dolores voluptates quidem porro optio?
+                                    Labore distinctio doloremque animi eum rerum provident ut tempora obcaecati
+                                    architecto
+                                    optio consequuntur iusto illo, expedita neque dolores quibusdam, saepe incidunt
+                                    assumenda reiciendis ea? Dolores enim quae error similique reprehenderit?
+                                    Debitis vitae cupiditate non, veritatis incidunt recusandae, numquam, necessitatibus
+                                    quos officia rerum unde voluptate cum. Fuga eaque voluptate voluptatem assumenda.
+                                    Dolorem, doloremque assumenda molestiae iusto quos consequatur consequuntur ipsum
+                                    provident!
+                                    Sed reiciendis modi eaque numquam quis error illum voluptatem culpa. Id
+                                    necessitatibus
+                                    labore dolorum veniam earum esse optio quidem culpa officiis asperiores fugiat
+                                    repudiandae maiores numquam voluptatum, excepturi consequuntur quis?
+                                    Nihil laboriosam recusandae est iste numquam, ea fugit saepe dolorem illum, officiis
+                                    assumenda, tempora quaerat repellat possimus? Similique tempore exercitationem amet,
+                                    repellendus veniam quas molestias quia, aliquam, officiis asperiores iure!
+                                    Natus cumque vel quaerat quod quis recusandae perferendis distinctio, qui
+                                    consectetur,
+                                    iusto odio! Ipsum qui soluta cumque, in eius ratione. Eum quasi aperiam similique
+                                    consequuntur possimus ea a voluptate repellendus!
+                                    Consectetur perferendis, voluptatum sequi velit, eveniet debitis in eligendi
+                                    corrupti
+                                    incidunt esse ab! Animi adipisci aperiam eveniet doloribus rerum, dolorum suscipit
+                                    id
+                                    nihil dignissimos perferendis assumenda impedit sed necessitatibus dolores?
+                                    Velit quo consequatur nulla odio fugiat ullam libero quasi, natus est harum quod
+                                    magni
+                                    recusandae iure, commodi voluptate dolore minima vero ipsum! Doloremque amet officia
+                                    distinctio, vitae quaerat deleniti minus.
+                                    Minima, necessitatibus, alias sit itaque sed harum doloremque praesentium cumque
+                                    expedita culpa voluptate repellat rem, perferendis sapiente quas in laudantium autem
+                                    quod delectus laborum cupiditate! Impedit quaerat aut ratione quia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    
 
     <script src="https://kit.fontawesome.com/e3e918e9f2.js" crossorigin="anonymous"></script>
     <script src="src/app.js"></script>
