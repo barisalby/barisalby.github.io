@@ -553,8 +553,16 @@ div::-webkit-scrollbar-thumb {
   position: relative;
 }
 
-.bottom-7{
-  bottom: 1.75rem;
+.bottom-6{
+  bottom: 1.5rem;
+}
+
+.right-\[20px\]{
+  right: 20px;
+}
+
+.top-0{
+  top: 0px;
 }
 
 .left-0{
@@ -563,10 +571,6 @@ div::-webkit-scrollbar-thumb {
 
 .right-0{
   right: 0px;
-}
-
-.top-0{
-  top: 0px;
 }
 
 .top-\[250px\]{
@@ -585,28 +589,12 @@ div::-webkit-scrollbar-thumb {
   top: 2.5rem;
 }
 
-.right-\[20px\]{
-  right: 20px;
-}
-
-.bottom-6{
-  bottom: 1.5rem;
-}
-
-.-z-10{
-  z-index: -10;
-}
-
 .z-50{
   z-index: 50;
 }
 
-.z-\[999\]{
-  z-index: 999;
-}
-
-.z-\[999px\]{
-  z-index: 999px;
+.-z-10{
+  z-index: -10;
 }
 
 .col-span-6{
@@ -681,6 +669,10 @@ div::-webkit-scrollbar-thumb {
   display: flex;
 }
 
+.inline-flex{
+  display: inline-flex;
+}
+
 .grid{
   display: grid;
 }
@@ -689,8 +681,8 @@ div::-webkit-scrollbar-thumb {
   display: none;
 }
 
-.h-\[35px\]{
-  height: 35px;
+.h-\[50px\]{
+  height: 50px;
 }
 
 .h-\[30px\]{
@@ -699,10 +691,6 @@ div::-webkit-scrollbar-thumb {
 
 .h-6{
   height: 1.5rem;
-}
-
-.h-\[50px\]{
-  height: 50px;
 }
 
 .h-8{
@@ -721,8 +709,8 @@ div::-webkit-scrollbar-thumb {
   width: auto;
 }
 
-.w-\[35px\]{
-  width: 35px;
+.w-\[50px\]{
+  width: 50px;
 }
 
 .w-\[30px\]{
@@ -741,12 +729,18 @@ div::-webkit-scrollbar-thumb {
   width: 2rem;
 }
 
-.w-\[50px\]{
-  width: 50px;
-}
-
 .basis-1\/2{
   flex-basis: 50%;
+}
+
+@keyframes pulse{
+  50%{
+    opacity: .5;
+  }
+}
+
+.animate-pulse{
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 @keyframes bounce{
@@ -763,27 +757,6 @@ div::-webkit-scrollbar-thumb {
 
 .animate-bounce{
   animation: bounce 1s infinite;
-}
-
-@keyframes pulse{
-  50%{
-    opacity: .5;
-  }
-}
-
-.animate-pulse{
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-@keyframes ping{
-  75%, 100%{
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-
-.animate-ping{
-  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
 .cursor-default{
@@ -928,12 +901,16 @@ div::-webkit-scrollbar-thumb {
   fill: #f87171;
 }
 
+.fill-white{
+  fill: #fff;
+}
+
 .p-5{
   padding: 1.25rem;
 }
 
-.p-14{
-  padding: 3.5rem;
+.p-8{
+  padding: 2rem;
 }
 
 .p-4{
@@ -942,15 +919,6 @@ div::-webkit-scrollbar-thumb {
 
 .p-1{
   padding: 0.25rem;
-}
-
-.p-8{
-  padding: 2rem;
-}
-
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .py-10{
@@ -966,6 +934,11 @@ div::-webkit-scrollbar-thumb {
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .py-3{
@@ -1238,20 +1211,6 @@ div::-webkit-scrollbar-thumb {
   .sm\:static{
     position: static;
   }
-
-  .sm\:left-0{
-    left: 0px;
-  }
-
-  .sm\:py-10{
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-
-  .sm\:px-5{
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
 }
 
 @media (min-width: 768px){
@@ -1263,16 +1222,40 @@ div::-webkit-scrollbar-thumb {
     position: relative;
   }
 
-  .md\:top-0{
-    top: 0px;
-  }
-
   .md\:left-0{
     left: 0px;
   }
 
   .md\:right-0{
     right: 0px;
+  }
+
+  .md\:top-0{
+    top: 0px;
+  }
+
+  .md\:left-10{
+    left: 2.5rem;
+  }
+
+  .md\:left-5{
+    left: 1.25rem;
+  }
+
+  .md\:left-1{
+    left: 0.25rem;
+  }
+
+  .md\:left-2{
+    left: 0.5rem;
+  }
+
+  .md\:left-3{
+    left: 0.75rem;
+  }
+
+  .md\:left-2\.5{
+    left: 0.625rem;
   }
 
   .md\:mt-10{
@@ -1283,8 +1266,30 @@ div::-webkit-scrollbar-thumb {
     display: block;
   }
 
+  .md\:inline-block{
+    display: inline-block;
+  }
+
+  .md\:inline{
+    display: inline;
+  }
+
   .md\:flex{
     display: flex;
+  }
+
+  .md\:inline-flex{
+    display: inline-flex;
+  }
+
+  @media (min-width: 768px){
+    .md\:md\:inline-flex{
+      display: inline-flex;
+    }
+  }
+
+  .md\:hidden{
+    display: none;
   }
 
   .md\:h-full{
@@ -1319,24 +1324,14 @@ div::-webkit-scrollbar-thumb {
     padding: 3.5rem;
   }
 
-  .md\:px-14{
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
-  }
-
   .md\:px-5{
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
 
-  .md\:px-10{
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
-  .md\:px-11{
-    padding-left: 2.75rem;
-    padding-right: 2.75rem;
+  .md\:px-14{
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
   .md\:pt-4{
@@ -1345,20 +1340,8 @@ div::-webkit-scrollbar-thumb {
 }
 
 @media (min-width: 1024px){
-  .lg\:static{
-    position: static;
-  }
-
   .lg\:fixed{
     position: fixed;
-  }
-
-  .lg\:relative{
-    position: relative;
-  }
-
-  .lg\:left-0{
-    left: 0px;
   }
 
   .lg\:ml-128{
@@ -1392,10 +1375,6 @@ div::-webkit-scrollbar-thumb {
 }
 
 @media (min-width: 1280px){
-  .xl\:relative{
-    position: relative;
-  }
-
   .xl\:flex-row{
     flex-direction: row;
   }

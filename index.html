@@ -11,21 +11,24 @@
 
 <body class="dark:bg-night-900">
     <div class="lg:fixed flex md:h-full lg:w-[475px] border-r dark:border-night-800 border-gray-200 bg-cloud">
+        <div class="relative flex">
         <div
-            class="watermark mx-auto md:px-5 py-10 justify-center w-auto md:relative sm:static bg-white dark:bg-night-700 dark:text-white md:border-r dark:border-night-400 border-gray-200 ">
-            <div class="vertical-rl flex text-sm cursor-default select-none">
-                <h1 class="text-gray-500 dark:text-gray-300 hidden md:block">Hosted by <i
-                        class="fa-solid fa-heart my-4 dark:text-night-400 hidden md:block"></i> GitHub
+            class="watermark mx-auto px-5 py-10 justify-center w-auto md:relative sm:static bg-white dark:bg-night-700 dark:text-white md:border-r dark:border-night-400 border-gray-200 md:flex hidden">
+            <div class="vertical-rl items-center align-middle inline-flex text-sm cursor-default select-none">
+                <h1 class="text-gray-500 dark:text-gray-300">Hosted by <i
+                        class="fa-solid fa-heart my-4 dark:text-night-400"></i> GitHub
                 </h1>
-                <span class="py-6 hidden md:block">/</span>
-                <h1 class="font-bold hidden md:block">Personal Identity</h1>
-
-                <button onclick="toggleDark()"
-                    class="horizontal-rl md:absolute fixed z-50 animate-pulse md:animate-none bottom-6 md:left-0 md:right-0 right-[20px] text-center mx-auto bg-red-400 dark:border-white text-white dark:bg-white dark:text-red-400 rounded-full md:h-[35px] md:w-[35px] h-[50px] w-[50px] flex align-middle items-center justify-center ">
-                    <i class="fa-solid fa-moon text-2xl"></i>
-            </button>
+                <span class="py-6">/</span>
+                <h1 class="font-bold ">Personal Identity</h1>
             </div>
         </div>
+        <button onclick="toggleDark()"
+        class="horizontal-rl md:absolute fixed z-50 animate-pulse md:animate-none bottom-6 md:left-2.5 md:right-0 right-[20px] text-center bg-red-400 dark:border-white text-white dark:bg-white dark:text-red-400 rounded-full md:h-[35px] md:w-[35px] h-[50px] w-[50px] flex align-middle items-center justify-center ">
+        <i class="fa-solid fa-moon text-2xl"></i>
+</button>
+    </div>
+
+
 
         <div class="profile overflow-y-auto">
             <div class="md:min-h-full bg-cloud dark:bg-night-900 pt-11 ">
@@ -176,8 +179,8 @@
                                     <a class="btn btn-secondary dropdown-toggle ml-24 w-full flex justify-end"
                                         role="button">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-                                            <path class="text-black dark:text-white "
+                                            stroke-width="1.5" stroke="currentColor" class="w-8 h-8 dark:text-white">
+                                            <path class="text-black dark:text-white" style="fill: white !important"
                                                 stroke-linecap="round" stroke-linejoin="round"
                                                 d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
                                         </svg>
