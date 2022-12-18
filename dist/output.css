@@ -661,6 +661,18 @@ div::-webkit-scrollbar-thumb {
   margin-bottom: 1.25rem;
 }
 
+.mr-10{
+  margin-right: 2.5rem;
+}
+
+.mr-5{
+  margin-right: 1.25rem;
+}
+
+.mr-3{
+  margin-right: 0.75rem;
+}
+
 .block{
   display: block;
 }
@@ -901,10 +913,6 @@ div::-webkit-scrollbar-thumb {
   fill: #f87171;
 }
 
-.fill-white{
-  fill: #fff;
-}
-
 .p-5{
   padding: 1.25rem;
 }
@@ -921,6 +929,11 @@ div::-webkit-scrollbar-thumb {
   padding: 0.25rem;
 }
 
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .py-10{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -934,11 +947,6 @@ div::-webkit-scrollbar-thumb {
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-}
-
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .py-3{
@@ -1222,74 +1230,28 @@ div::-webkit-scrollbar-thumb {
     position: relative;
   }
 
-  .md\:left-0{
-    left: 0px;
+  .md\:left-2\.5{
+    left: 0.625rem;
   }
 
   .md\:right-0{
     right: 0px;
   }
 
-  .md\:top-0{
-    top: 0px;
-  }
-
-  .md\:left-10{
-    left: 2.5rem;
-  }
-
-  .md\:left-5{
-    left: 1.25rem;
-  }
-
-  .md\:left-1{
-    left: 0.25rem;
-  }
-
   .md\:left-2{
     left: 0.5rem;
   }
 
-  .md\:left-3{
-    left: 0.75rem;
-  }
-
-  .md\:left-2\.5{
-    left: 0.625rem;
+  .md\:top-0{
+    top: 0px;
   }
 
   .md\:mt-10{
     margin-top: 2.5rem;
   }
 
-  .md\:block{
-    display: block;
-  }
-
-  .md\:inline-block{
-    display: inline-block;
-  }
-
-  .md\:inline{
-    display: inline;
-  }
-
   .md\:flex{
     display: flex;
-  }
-
-  .md\:inline-flex{
-    display: inline-flex;
-  }
-
-  @media (min-width: 768px){
-    .md\:md\:inline-flex{
-      display: inline-flex;
-    }
-  }
-
-  .md\:hidden{
-    display: none;
   }
 
   .md\:h-full{
@@ -1322,11 +1284,6 @@ div::-webkit-scrollbar-thumb {
 
   .md\:p-14{
     padding: 3.5rem;
-  }
-
-  .md\:px-5{
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
   }
 
   .md\:px-14{
