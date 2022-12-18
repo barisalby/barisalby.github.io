@@ -677,6 +677,10 @@ div::-webkit-scrollbar-thumb {
   display: block;
 }
 
+.inline-block{
+  display: inline-block;
+}
+
 .flex{
   display: flex;
 }
@@ -739,6 +743,22 @@ div::-webkit-scrollbar-thumb {
 
 .w-8{
   width: 2rem;
+}
+
+.w-0{
+  width: 0px;
+}
+
+.w-\[405px\]{
+  width: 405px;
+}
+
+.w-\[400px\]{
+  width: 400px;
+}
+
+.w-\[390px\]{
+  width: 390px;
 }
 
 .basis-1\/2{
@@ -1315,6 +1335,18 @@ div::-webkit-scrollbar-thumb {
 
   .lg\:w-\[422px\]{
     width: 422px;
+  }
+
+  .lg\:w-\[410px\]{
+    width: 410px;
+  }
+
+  .lg\:w-\[408px\]{
+    width: 408px;
+  }
+
+  .lg\:w-\[405px\]{
+    width: 405px;
   }
 
   .lg\:flex-col{
